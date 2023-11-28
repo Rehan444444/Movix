@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { fetchDataFromApi } from "./utils/api";
+import AdComponent from "./components/Adsense";
 
 import { useSelector, useDispatch } from "react-redux";
 import { getApiConfiguration, getGenres } from "./store/homeSlice";
@@ -65,6 +66,7 @@ function App() {
                 <Route path="/explore/:mediaType" element={<Explore />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
+            <AdComponent/>
             <Footer />
         </BrowserRouter>
     );
