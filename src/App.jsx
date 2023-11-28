@@ -68,8 +68,9 @@ function App() {
                 <Route path="/explore/:mediaType" element={<Explore />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
-            <AdComponent/>
+            
             <Footer />
+            <AdComponent/>
             
         </BrowserRouter>
     );
